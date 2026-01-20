@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#"><span>Annisa Anindya</span> Rachma</a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="gallery.html" class="active">GALLERY</a></li>
+                    </ul>
+                    <i class="fa fa-check"></i>
+                    <label class="mode">
+                        <input type="checkbox" id="darkModeButton" checked />
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label for="menu-toggle" class="hamburger">
+                        <div class="bar"></div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Gallery <span>Artwork</span></h2>
+
+            <div class="portfolio-wrapper">
+                <div class="portfolio-box">
+                    <img src="images/shru 11.jpg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Desain Grafis</h4>
+                        <p>Adobe Illustrator, Adobe Photoshop, Figma, Canva</p>
+                        <a href="gallery.html#desaingrafis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/sketsatp11.png" alt="">
+                    <div class="portfolio-info">
+                        <h4>Illustrasi</h4>
+                        <p>Ibis Paint, Adobe Illustrator</p>
+                        <a href="gallery.html#ilustrasi"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/lwsw tengah 11.jpg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Fotografi</h4>
+                        <p>Kamera</p>
+                        <a href="gallery.html#fotografi"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="desaingrafis" class="gallery">
+        <div class="container">
+            <h3 class="kategori-title">Desain Grafis</h3>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openDetail('des1')" data-category="desaingrafis">
+                    <img src="images/sh_runeon.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des2')" data-category="desaingrafis">
+                    <img src="images/jeno_unvrs.png" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des3')" data-category="desaingrafis">
+                    <img src="images/ni-kitext.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des4')" data-category="desaingrafis">
+                    <img src="images/felixclippingmask.png" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des5')" data-category="desaingrafis">
+                    <img src="images/brosur1.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des6')" data-category="desaingrafis">
+                    <img src="images/brosur2.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ilustrasi" class="gallery">
+        <div class="container">
+            <h3 class="kategori-title">Ilustrasi</h3>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openDetail('des7')" data-category="illustrasi">
+                    <img src="images/sketsatp.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fotografi" class="gallery">
+        <div class="container">
+            <h3 class="kategori-title">Fotografi</h3>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openDetail('des13')" data-category="fotografi">
+                    <img src="images/lawang sewu tengah.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des14')" data-category="fotografi">
+                    <img src="images/lawang sewu 916.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+               <div class="gallery-item" onclick="openDetail('des15')" data-category="fotografi">
+                    <img src="images/kucing desa.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des16')" data-category="fotografi">
+                    <img src="images/negative space tanaman kiri.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des17')" data-category="fotografi">
+                    <img src="images/negative space tanaman tengah.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des18')" data-category="fotografi">
+                    <img src="images/frog eye tanaman.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des19')" data-category="fotografi">
+                    <img src="images/lampu halte mangkubumi.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des20')" data-category="fotografi">
+                    <img src="images/mangkubumi.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+               <div class="gallery-item" onclick="openDetail('des21')" data-category="fotografi">
+                    <img src="images/kereta api kepala.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des22')" data-category="fotografi">
+                    <img src="images/kereta api badan.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des23')" data-category="fotografi">
+                    <img src="images/negative space tiang kanan.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openDetail('des24')" data-category="fotografi">
+                    <img src="images/awan pelangi.jpg" alt="">
+                    <div class="overlay">
+                        <p>Lihat Detail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <div id="des1" class="detail-modal">
+                <div class="detail-content">
+                    <span class="close" onclick="closeDetail('des1')">&times;</span>
+
+                    <h2>SUNGHOON ENHYPEN - ROMANCE:UNTOLD (CONCESSIO VER.)</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Adobe Photoshop</p>
+                    <p>Desain dengan efek neon berbentuk segitiga yang menciptakan kesan futuristik dan dramatis.</p>
+
+                    <img src="images/sh_runeon.jpg" class="detail-img">
+                </div>
+            </div>
+            <div id="des2" class="detail-modal2">
+                <div class="detail-content2">
+                    <span class="close" onclick="closeDetail('des2')">&times;</span>
+
+                    <h2>JENO NCT U (UNIVERSE) - HALF FACE TEXT</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Adobe Photoshop</p>
+                    <p>Potret wajah dengan elemen teks yang menutupi sebagian wajah.</p>
+
+                    <img src="images/jeno_unvrs.png" class="detail-img2">
+                </div>
+            </div>
+            <div id="des3" class="detail-modal3">
+                <div class="detail-content3">
+                    <span class="close" onclick="closeDetail('des3')">&times;</span>
+
+                    <h2>NI-KI ENHA - TEXT</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Adobe Photoshop</p>
+                    <p>Teks dibuat tertutup sebagian oleh objek supaya terlihat di belakang dan tetap menyatu dengan desain.</p>
+
+                    <img src="images/ni-kitext.jpg" class="detail-img3">
+                </div>
+            </div>
+            <div id="des4" class="detail-modal4">
+                <div class="detail-content4">
+                    <span class="close" onclick="closeDetail('des4')">&times;</span>
+
+                    <h2>FELIX SKZ - CLIPPING MASK</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Adobe Photoshop</p>
+                    <p>Penerapan teknik <em>clipping mask</em> untuk menggabungkan gambar dan bingkai.</p>
+
+                    <img src="images/felixclippingmask.png" class="detail-img4">
+                </div>
+            </div>
+            <div id="des5" class="detail-modal5">
+                <div class="detail-content5">
+                    <span class="close" onclick="closeDetail('des5')">&times;</span>
+
+                    <h2>BROSUR SMOOTHIE - DAYRACHA</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Adobe Illustrasi</p>
+                    <p>Desain bagian depan brosur dengan tampilan menarik dan informatif.</p>
+
+                    <img src="images/brosur1.jpg" class="detail-img5">
+                </div>
+            </div>
+            <div id="des6" class="detail-modal6">
+                <div class="detail-content6">
+                    <span class="close" onclick="closeDetail('des6')">&times;</span>
+
+                    <h2>BROSUR SMOOTHIE - DAYRACHA</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Adobe Illustrasi</p>
+                    <p>Desain bagian belakang brosur dengan susunan konten yang rapi.</p>
+
+                    <img src="images/brosur2.jpg" class="detail-img6">
+                </div>
+            </div>
+
+            <div id="des7" class="detail-modal7">
+                <div class="detail-content7">
+                    <span class="close" onclick="closeDetail('des7')">&times;</span>
+
+                    <h2>SKETSA KASAR T.PEMESINAN - PUNCAK DIES NATALIS PJS 106</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Ibis Paint</p>
+                    <p>Ilustrasi ini dibuat sebagai sketsa kasar yang menjadi dasar pembuatan karya lukisan pada acara puncak Dies Natalis PJS ke-106.</p>
+
+                    <img src="images/sketsatp.jpg" class="detail-img7">
+                </div>
+            </div>
+
+            <div id="des13" class="detail-modal13">
+                <div class="detail-content13">
+                    <span class="close" onclick="closeDetail('des13')">&times;</span>
+
+                    <h2>LAWANG SEWU - SEMARANG</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Pengambilan gambar dengan komposisi <em>Rule of Thirds</em> sehingga objek terlihat seimbang dan pas di tengah.</p>
+
+                    <img src="images/lawang sewu tengah.jpg" class="detail-img13">
+                </div>
+            </div>
+            <div id="des14" class="detail-modal14">
+                <div class="detail-content14">
+                    <span class="close" onclick="closeDetail('des14')">&times;</span>
+
+                    <h2>LAWANG SEWU (SAMPING) - SEMARANG</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Sudut pengambilan sedikit miring untuk memberi kesan dinamis pada bangunan.</p>
+
+                    <img src="images/lawang sewu 916.jpg" class="detail-img14">
+                </div>
+            </div>
+            <div id="des15" class="detail-modal15">
+                <div class="detail-content15">
+                    <span class="close" onclick="closeDetail('des15')">&times;</span>
+
+                    <h2>KUCING</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Menggunakan <em>aperture</em> besar agar objek di depan terlihat jelas sementara latar belakang tampak blur.</p>
+
+                    <img src="images/kucing desa.jpg" class="detail-img15">
+                </div>
+            </div>
+            <div id="des16" class="detail-modal16">
+                <div class="detail-content16">
+                    <span class="close" onclick="closeDetail('des16')">&times;</span>
+
+                    <h2>TANAMAN 1 - NEGATIVE SPACE</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Pemanfaatan ruang kosong <em>(negative space)</em> untuk menonjolkan objek tanaman di sisi kiri.</p>
+
+                    <img src="images/negative space tanaman kiri.jpg" class="detail-img16">
+                </div>
+            </div>
+            <div id="des17" class="detail-modal17">
+                <div class="detail-content17">
+                    <span class="close" onclick="closeDetail('des17')">&times;</span>
+
+                    <h2>TANAMAN 2 - NEGATIVE SPACE</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Objek diletakkan di tengah dengan <em>negative space</em> untuk menciptakan tampilan yang sederhana dan fokus.</p>
+
+                    <img src="images/negative space tanaman tengah.jpg" class="detail-img17">
+                </div>
+            </div>
+            <div id="des18" class="detail-modal18">
+                <div class="detail-content18">
+                    <span class="close" onclick="closeDetail('des18')">&times;</span>
+
+                    <h2>TANAMAN 3 - FROG EYE</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Pengambilan sudut dari bawah <em>(frog eye)</em> dengan <em>depth of field</em> untuk menonjolkan objek.</p>
+
+                    <img src="images/frog eye tanaman.jpg" class="detail-img18">
+                </div>
+            </div>
+            <div id="des19" class="detail-modal19">
+                <div class="detail-content19">
+                    <span class="close" onclick="closeDetail('des19')">&times;</span>
+
+                    <h2>LAMPU HALTE SAAT HUJAN - MANGKUBUMI</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Pengambilan gambar dengan komposisi foto <em>Rule of Thirds</em> serta menggunakan <em>shutter speed</em> cepat untuk membekukan momen di tengah hujan.</p>
+
+                    <img src="images/lampu halte mangkubumi.jpg" class="detail-img19">
+                </div>
+            </div>
+            <div id="des20" class="detail-modal20">
+                <div class="detail-content20">
+                    <span class="close" onclick="closeDetail('des20')">&times;</span>
+
+                    <h2>DEPAN HALTE - MANGKUBUMI</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> kamera</p>
+                    <p><em>Shutter speed</em> lambat digunakan untuk menangkap efek cahaya dan suasana malam.</p>
+
+                    <img src="images/mangkubumi.jpg" class="detail-img20">
+                </div>
+            </div>
+            <div id="des21" class="detail-modal21">
+                <div class="detail-content21">
+                    <span class="close" onclick="closeDetail('des21')">&times;</span>
+
+                    <h2>KEPALA KERETA API - SHUTTER SPEED</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p><em>Shutter speed</em> cepat untuk menangkap kereta dengan detail yang jelas.</p>
+
+                    <img src="images/kereta api kepala.jpg" class="detail-img21">
+                </div>
+            </div>
+            <div id="des22" class="detail-modal22">
+                <div class="detail-content22">
+                    <span class="close" onclick="closeDetail('des22')">&times;</span>
+
+                    <h2>KERETA API BADAN - SHUTTER SPEED</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Penggunaan <em>shutter speed</em> cepat agar gerakan kereta tetap terlihat tajam.</p>
+
+                    <img src="images/kereta api badan.jpg" class="detail-img22">
+                </div>
+            </div>
+            <div id="des23" class="detail-modal23">
+                <div class="detail-content23">
+                    <span class="close" onclick="closeDetail('des23')">&times;</span>
+
+                    <h2>TIANG - NEGATIVE SPACE</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Pemanfaatan <em>negative space</em> untuk menonjolkan objek tiang di sisi kanan.</p>
+
+                    <img src="images/negative space tiang kanan.jpg" class="detail-img23">
+                </div>
+            </div>
+            <div id="des24" class="detail-modal24">
+                <div class="detail-content24">
+                    <span class="close" onclick="closeDetail('des24')">&times;</span>
+
+                    <h2>AWAN PELANGI - HALTE PDAM MONJALI</h2>
+                    <p><strong>Tahun:</strong> 2025</p>
+                    <p><strong>Tools:</strong> Kamera</p>
+                    <p>Pengaturan <em>ISO</em> untuk menangkap detail warna awan dalam kondisi cahaya tertentu.</p>
+
+                    <img src="images/awan pelangi.jpg" class="detail-img24">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+
+        const darkModeButton = document.getElementById('darkModeButton');
+        const body = document.body;
+
+        const enableDarkMode = () => {
+            body.classList.add('dark-mode');
+        }
+
+        const disableDarkMode = () => {
+            body.classList.remove('dark-mode');
+        }
+
+        darkModeButton.addEventListener('change', () => {
+            if(darkModeButton.checked) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        const typed = new Typed('.multiple', {
+            strings:['Desainer Grafis', 'Illustrator', 'Fotografer'],
+            typeSpeed: 95,
+            backSpeed: 95,
+            backDelay: 700,
+            loop: true
+        });
+    </script>
+    <script>
+        function openDetail(id) {
+            document.getElementById(id).classList.add("active");
+        }
+
+        function closeDetail(id) {
+            document.getElementById(id).classList.remove("active");
+        }
+    </script>
+    <script>
+        const btns = document.querySelectorAll('.filter-btns span');
+        const items = document.querySelectorAll('.gallery-items .item');
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+
+                btns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                let filter = btn.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    if (filter === item.getAttribute('data-category')) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        const buttons = document.querySelectorAll('.filter-btn');
+   
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+
+                buttons.forEach(b => b.classList.remove('active'));
+
+                btn.classList.add('active');
+
+                const target = document.getElementById(btn.dataset.category);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+           });
+        });
+    </script>
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+   
+            filterBtns.forEach(b => b.classList.remove('active'));
+ 
+            btn.classList.add('active');
+
+            const category = btn.dataset.category;
+
+            galleryItems.forEach(item => {
+              if(category === 'all' || item.dataset.category === category){
+                item.classList.remove('hide');
+              } else {
+                item.classList.add('hide');
+              }
+            });
+          });
+        });
+    </script>
+
+</body>
+</html>

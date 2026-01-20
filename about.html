@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="about.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="header-gradient"></div>
+        <div class="container">
+            <nav>
+                <div class="nama">
+                    <a href="#"><span>Annisa Anindya</span> Rachma</a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html" class="active">ABOUT ME</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                    </ul>
+                    <i class="fa fa-check"></i>
+                    <label class="mode">
+                        <input type="checkbox" id="darkModeButton" checked />
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <input type="checkbox" id="menu-toggle" />
+                    <label for="menu-toggle" class="hamburger">
+                        <div class="bar"></div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <div class="about-img">
+                        <img src="images/gue34.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-info">
+                        <h3>Halo! Saya</h3>
+                        <h1>Annisa Anindya Rachma</h1>
+                        <h4>Dan Saya seorang <span class="multiple"></span></h4>
+                        <p>
+                            Seorang kreator visual yang tertarik pada detail, komposisi, dan harmoni warna.
+                            Setiap karya di sini merupakan bagian dari perjalanan saya untuk terus belajar dan
+                            berkembang
+                            di dunia seni.
+                            Senang rasanya bisa berbagi proses dan hasil karya saya dengan kalian.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-tambahan">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left2">
+                    <h2 class="section-title">Pendidikan</h2>
+                    <div class="about-box1">
+                        <h3>SMK Negeri 2 Yogyakarta</h3>
+                        <p class="major">Desain Komunikasi Visual (DKV)</p>
+                        <p class="year">2024 – <em>Now</em></p>
+                    </div>
+                    <div class="about-box1">
+                        <h3>SMP Negeri 4 Yogyakarta</h3>
+                        <p class="year">2021 – 2024</p>
+                    </div>
+
+                    <h2 class="section-title" id="proyek">Proyek Sekolah</h2>
+
+                    <div class="about-box">
+                        <h3>Manipulasi Foto<span> (Photoshop)</span></h3>
+                        <p>Editing foto dengan penggabungan elemen visual dan pengaturan <em>tone</em> untuk hasil yang lebih
+                            dramatis.</p>
+                    </div>
+                    <div class="about-box">
+                        <h3>Ilustrasi Digital<span> (Adobe Illustrator, Ibis Paint)</span></h3>
+                        <p>
+                            Membuat ilustrasi digital dengan fokus pada bentuk, warna, dan <em>storytelling</em> visual.
+                        </p>
+                    </div>
+                    <div class="about-box">
+                        <h3>Fotografi<span> (Kamera)</span></h3>
+                        <p>
+                            Mengambil gambar dengan memperhatikan komposisi, aperture, pemilihan <em>angle</em>, dan jenis <em>shot</em>.
+                        </p>
+                    </div>
+                    <div class="about-box">
+                        <h3>Desain Brosur<span> (Adobe Illustrator, Canva)</span></h3>
+                        <p>
+                            Membuat <em>layout</em> brosur yang rapi, informatif, dan modern dengan penggunaan tipografi dan <em>grid</em>
+                            yang terstruktur.
+                        </p>
+                    </div>
+                    <div class="about-box">
+                        <h3>Desain Kalender<span> (CorelDraw, Adobe Illustrator)</span></h3>
+                        <p>
+                            Membuat <em>layout</em> brosur yang rapi, informatif, dan modern dengan penggunaan tipografi dan <em>grid</em>
+                            yang terstruktur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-right2">
+                    <h2 class="section-title" id="hobi">Hobi</h2>
+                    <div class="about-box2">
+
+                        <h3>Menggambar</h3>
+
+                        <div class="hobi-grid">
+                            <div class="hobi-item" onclick="openDetail('des')" data-category="hobi">
+                                <img src="images/keonhofull.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des2')" data-category="hobi">
+                                <img src="images/sunghoonfull.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des3')" data-category="hobi">
+                                <img src="images/antonbbbfull.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des4')" data-category="hobi">
+                                <img src="images/wonbinlucky11.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des5')" data-category="hobi">
+                                <img src="images/wonbin11911.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des6')" data-category="hobi">
+                                <img src="images/yeonjunfull.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des7')" data-category="hobi">
+                                <img src="images/ayenfoto.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des8')" data-category="hobi">
+                                <img src="images/ayenlukisan.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+
+                            <div class="hobi-item" onclick="openDetail('des9')" data-category="hobi">
+                                <img src="images/unknown.jpg" alt="">
+                                <div class="overlay">
+                                    <p>Lihat Detail</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+                        <div id="des" class="detail-modal">
+                            <div class="detail-content">
+                                <span class="close" onclick="closeDetail('des')">&times;</span>
+
+                                <h2>KEONHO CORTIS</h2>
+                                <img src="images/keonhofull.jpg" class="detail-img">
+                            </div>
+                        </div>
+                        <div id="des2" class="detail-modal">
+                            <div class="detail-content2">
+                                <span class="close" onclick="closeDetail('des2')">&times;</span>
+
+                                <h2>SUNGHOON ENHYPEN - ROMANCE:UNTOLD (INCEPTIO VER.)</h2>
+                                <img src="images/sunghoonfull.jpg" class="detail-img2">
+                            </div>
+                        </div>
+                        <div id="des3" class="detail-modal">
+                            <div class="detail-content3">
+                                <span class="close" onclick="closeDetail('des3')">&times;</span>
+
+                                <h2>ANTON RIIZE - BOOM BOOM BASS</h2>
+                                <img src="images/antonbbbfull.jpg" class="detail-img3">
+                            </div>
+                        </div>
+                        <div id="des4" class="detail-modal">
+                            <div class="detail-content4">
+                                <span class="close" onclick="closeDetail('des4')">&times;</span>
+
+                                <h2>WONBIN RIIZE - LUCKY</h2>
+                                <img src="images/wonbinluckyfull.jpg" class="detail-img4">
+                            </div>
+                        </div>
+                        <div id="des5" class="detail-modal">
+                            <div class="detail-content5">
+                                <span class="close" onclick="closeDetail('des5')">&times;</span>
+
+                                <h2>WONBIN RIIZE - LOVE 119 ERA</h2>
+                                <img src="images/wonbin119.jpg" class="detail-img5">
+                            </div>
+                        </div>
+                        <div id="des6" class="detail-modal">
+                            <div class="detail-content6">
+                                <span class="close" onclick="closeDetail('des6')">&times;</span>
+
+                                <h2>YEONJUN TXT</h2>
+                                <img src="images/yeonjunfull.jpg" class="detail-img6">
+                            </div>
+                        </div>
+                        <div id="des7" class="detail-modal">
+                            <div class="detail-content7">
+                                <span class="close" onclick="closeDetail('des7')">&times;</span>
+
+                                <h2>I.N STRAYKIDS</h2>
+                                <img src="images/ayenfoto.jpg" class="detail-img7">
+                            </div>
+                        </div>
+                        <div id="des8" class="detail-modal">
+                            <div class="detail-content8">
+                                <span class="close" onclick="closeDetail('des8')">&times;</span>
+
+                                <h2>I.N STRAYKIDS</h2>
+                                <img src="images/ayenlukisan.jpg" class="detail-img8">
+                            </div>
+                        </div>
+                        <div id="des9" class="detail-modal">
+                            <div class="detail-content9">
+                                <span class="close" onclick="closeDetail('des9')">&times;</span>
+
+                                <h2>UNKNOWN</h2>
+                                <img src="images/unknown.jpg" class="detail-img9">
+                            </div>
+                        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+
+        const darkModeButton = document.getElementById('darkModeButton');
+        const body = document.body;
+
+        const enableDarkMode = () => {
+            body.classList.add('dark-mode');
+        }
+
+        const disableDarkMode = () => {
+            body.classList.remove('dark-mode');
+        }
+
+        darkModeButton.addEventListener('change', () => {
+            if (darkModeButton.checked) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        const typed = new Typed('.multiple', {
+            strings: ['Desainer Grafis', 'Illustrator', 'Fotografer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 500,
+            loop: true
+        });
+    </script>
+    <script>
+        function openDetail(id) {
+            document.getElementById(id).classList.add("active");
+        }
+
+        function closeDetail(id) {
+            document.getElementById(id).classList.remove("active");
+        }
+    </script>
+
+</body>
+
+</html>

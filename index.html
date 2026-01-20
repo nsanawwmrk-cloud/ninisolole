@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolioo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nama">
+                    <a href="#"><span>Annisa Anindya</span> Rachma</a>
+                </div>
+                <div class="list-darkmode-menu">
+                    <ul>
+                        <li><a href="portofolioo.html" class="active">HOME</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                    </ul>
+                    <i class="fa fa-check"></i>
+                    <label class="mode">
+                        <input type="checkbox" id="darkModeButton" checked />
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </label>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label for="menu-toggle" class="hamburger">
+                        <div class="bar"></div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="left">
+                    <h1>Annisa Anindya Rachma</h1>
+                    <h3><span class="multiple"></span></h3>
+                    <h4>Desainer Grafis, Illustrator, Fotografer</h4>
+                    <div class="social">
+                        <a href="https://wa.me/6281327262693" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/se_enlokt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:annisanindyama@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <div class="btn">
+                        <a href="about.html" class="btn-link">Tentang Saya</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="profile">
+                        <img src="images/gue.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="logo" class="logo">
+        <div class="container">
+            <div class="logo-left">
+                <div class="lleft">
+                    <img src="images/logoai.jpg" alt="">
+                </div>
+            </div>
+            <div class="logo-center">
+                <div class="lcenter">
+                    <img src="images/logopsd.jpg" alt="">
+                </div>
+            </div>
+            <div class="logo-center2">
+                <div class="lcenter2">
+                    <img src="images/logofigma.jpg" alt="">
+                </div>
+            </div>
+            <div class="logo-center3">
+                <div class="lcenter3">
+                    <img src="images/logoibispaintx.jpg" alt="">
+                </div>
+            </div>
+            <div class="logo-right">
+                <div class="lright">
+                    <img src="images/logocanva.jpg" alt="">
+                </div>
+            </div>
+            <div class="logo-right2">
+                <div class="lright2">
+                    <img src="images/coreldrawlogo.png" alt="">
+                </div>
+            </div>
+            <div class="logo-right3">
+                <div class="lright3">
+                    <img src="images/logokamera.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Gallery <span>Artwork</span></h2>
+
+            <div class="portfolio-wrapper">
+                <div class="portfolio-box">
+                    <img src="images/shru 11.jpg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Desain Grafis</h4>
+                        <p>Adobe Illustrator, Adobe Photoshop, Figma, Canva</p>
+                        <a href="gallery.html#portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/sketsatp11.png" alt="">
+                    <div class="portfolio-info">
+                        <h4>Illustrasi</h4>
+                        <p>Ibis Paint, Adobe Illustrator</p>
+                        <a href="gallery.html#portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/lwsw tengah 11.jpg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Fotografi</h4>
+                        <p>Kamera</p>
+                        <a href="gallery.html#portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+
+        const darkModeButton = document.getElementById('darkModeButton');
+        const body = document.body;
+
+        const enableDarkMode = () => {
+            body.classList.add('dark-mode');
+        }
+
+        const disableDarkMode = () => {
+            body.classList.remove('dark-mode');
+        }
+
+        darkModeButton.addEventListener('change', () => {
+            if(darkModeButton.checked) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
+        const typed = new Typed('.multiple', {
+            strings:['Kreator Visual'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 500,
+            loop: true
+        });
+    </script>
+
+</body>
+</html>
